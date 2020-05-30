@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Admin";
+	var user = Session["AdminLoginUser"] as GorselProgramlamaProjeModel.Entity.User;
+}
+
+<h2>Admin Yönetim Paneli</h2>
+<p>Admin: @user.Name  @user.LastName</p>
+<ul>
+	<li>
+		<a href="/Admin/Users">Üye Yönetimi</a>
+	</li>
+
+	<li>
+		<a href="/Admin/Products">Ürün Yönetimi</a>
+	</li>
+
+	<li>
+		<a href="/Admin/Categories">Kategori Yönetimi</a>
+	</li>
+</ul>
+
